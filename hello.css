@@ -7,8 +7,9 @@ body{
 .container{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
-<!--flex-wrap-->
+
 h1{
     left: 20px;
     background-color: rgba(0, 137, 255, 1);
