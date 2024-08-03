@@ -3,7 +3,7 @@ const facts = [
     "I competed in a badminton touranament.",
     "I am an only child.",
     " I know how to play chess and quite good at it.",
-    "I am a speed cuber my best ave in ,y peak is 13s.",
+    "I am a speed cuber my best ave at my peak is 13s.",
     "I like anime back in 2020 now i read manga, mahwa, and manhua.",
     "I also like reading novels, mostly chinese novels.",
     " I also like to eat.",
