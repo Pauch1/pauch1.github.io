@@ -78,6 +78,7 @@ h1{
     border-color: rgba(16, 152, 245, 1);
     margin: 5px;
     box-sizing: border-box;
+    margin-right: auto;
 }
 
 #goall{
