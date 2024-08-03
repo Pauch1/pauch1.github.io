@@ -1,60 +1,112 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>
-        my website
-    </title>
-    <style>
-        
-    </style>
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="imahe">
-            <img src="me.jpg" alt="pogi">
-            <div class="text">
-                <p id="mine"> hello i am paulo an this is my first html hope, i can learn more</p>
-            </div>
-        </div>
-        <div class="aboutme">
-            <ul id="facts">
-                <h2 id="facth"> Facts about me</h2>
-                <li class="fact">I am a fan of MLBB esport and i am super excited for the new season of mpl.</li>
-                <li class="fact">I competed in a badminton touranament.</li>
-                <li class="fact">I am an only child.</li>
-                <li class="fact">I know how to play chess and quite good at it.</li>
-                <li class="fact">I am a speed cuber my best ave in ,y peak is 13s.</li>
-                <li class="fact">I like anime back in 2020 now i read manga, mahwa, and manhua.</li>
-                <li class="fact">Beside the mention above i also like reading novels, mostly chinese novels.</li>
-                <li class="fact">I also like to eat.</li>
-                <li class="fact">I love math.</li>
-                <li class="fact">I love problem solving.</li>
-                <li class="fact">I am a freindly person.</li>
-                <li class="fact">I hate morning.</li>
-            </ul>
-        </div>
-        <div id="goals">
-            <h2 id="goall"> My Career GOALS</h2>
+        <header>
+            <h1>John Paulo T. Puyot</h1>
+            <p>A one step forward is the start of a thousand mile journey</p>
+        </header>
+
+        <nav>
             <ul>
-                <li class="goal">Improve my coding skill.</li>
-                <li class="goal">Master HTML and CSS.</li>
-                <li class="goal">Learn Javascript.</li>
-                <li class="goal">Improve my Python skill.</li>
-                <li class="goal">Build atleast 3 project.</li>
-                <li class="goal">Master the basics.</li>
-                <li class="goal">Improve my designer mind.</li>
-                <li class="goal">Learn react.</li>
-                <li class="goal">Learn machine learning.</li>
-                <li class="goal">Learn about cyber security.</li>
-                <li class="goal">Learn sql.</li>
+                <li><button onclick="showSection('about')">About Me</button></li>
+                <li><button onclick="showSection('goals')">My Goals</button></li>
+                <li><button onclick="showSection('facts')">Fun Facts</button></li>
+                <li><button onclick="showSection('contact')">Contact</button></li>
             </ul>
-        </div>
+        </nav>
+
+        <main>
+            <section id="about">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <img src="me.jpg" alt="paulo" class="profile-picture">
+                    <p>
+                        Hello! I'm Paulo, a freshman IT student at Mindoro State University. I'm embarking on an
+                        exciting journey into the world of technology and computer science, where I'm eager to explore a
+                        wide range of topics from software development to cybersecurity.
+                    </p>
+                        As a newcomer to the field, I'm particularly fascinated by Chatbot technology(e.g. chatgpt),
+                        web programming and software development. Im passionate about understanding how
+                        technology can solve real-world problems and enhance our daily lives. My academic focus is on
+                        learning and mastering various programming languages such as python, javascript, react, 
+                        ruby, and Im excited about applying my learning topractical challenges.
+                    </p>
+                    <p>
+                        During my summer vaction, I,ve had the motivation to start and learn various programming
+                        languages like python and c. I have build projects that incorporate what i have
+                        learn in these countless tutorial i have watch. These experiences have honed my problem-solving
+                        skills and provided me with a solid foundation in coding and problem-analysis.
+                    </p>
+                    <p>
+                        Outside of my studies, I enjoy playing mobile games, reading novel and watching youtube or tiktok.
+                        I find inspiration in a youtuber name michael reeves, he is a tech youtuber who made incredible but not so usefull
+                        stuff, he add humor to his video and was funny guy. He create a video not for money or content, he create
+                        video because he genuinly like it. And just like him i want to create project that i want to, intergrate
+                         technology in my daily life.
+                    </p>
+                    <p>
+                        I'm excited to continue learning and growing in the field of IT, and I'm eager to connect with
+                        others who share my passion. Create a wonderful memory and a strong bond with them
+                    </p>
+                </div>
+
+            </section>
+
+            <section id="goals" class="hidden">
+                <h2>My Goals</h2>
+                <ul>
+                    <li class="goal">Improve my coding skill.</li>
+                    <li class="goal">Master HTML and CSS.</li>
+                    <li class="goal">Learn Javascript.</li>
+                    <li class="goal">Improve my Python skill.</li>
+                    <li class="goal">Build atleast 3 project.</li>
+                    <li class="goal">Master the basics.</li>
+                    <li class="goal">Improve my designer mind.</li>
+                    <li class="goal">Learn react.</li>
+                    <li class="goal">Learn machine learning.</li>
+                    <li class="goal">Learn about cyber security.</li>
+                    <li class="goal">Learn sql.</li>
+                </ul>
+            </section>
+
+            <section id="facts" class="hidden">
+                <h2>Fun Facts</h2>
+                <div id="factContainer">
+                    <p id="currentFact">Click the button to see a fun fact about me!</p>
+                </div>
+                <button onclick="showRandomFact()">Show Another Fact</button>
+            </section>
+
+            <section id="contact" class="hidden">
+                <h2>Contact Me</h2>
+                <form>
+                    <div>
+                        <label for="name">Name</label>
+                        <input id="name" type="text" placeholder="Your Name">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" type="email" placeholder="Your Email">
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Your Message" rows="4"></textarea>
+                    </div>
+                    <button type="button" onclick="submitForm()">Send Message</button>
+                </form>
+            </section>
+        </main>
     </div>
-    <a href="practice.html"> dunno </a>
+    <script src="script.js"></script>
 </body>
+
 </html>
