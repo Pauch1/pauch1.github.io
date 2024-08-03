@@ -63,7 +63,7 @@ h1{
     max-width: 100px; /* Ensure it doesn't exceed original width */
     font-size: clamp(20px, 5vw, 80px); /* Responsive font size */
     padding-left: none; /* Responsive padding */
-    border-width: 10px; /* Adjusted to a fixed width for border */
+    border-width: 10%; /* Adjusted to a fixed width for border */
     border-color: whitesmoke; /* Ensuring border color */
     box-sizing: border-box; /* Ensuring padding and border are included in width */
    
